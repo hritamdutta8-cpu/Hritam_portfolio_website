@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hritam's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+     <h1 class="name">Hritam Dutta</h1>
+     <div class="nav-links">
+     <a href="#home">Home</a>
+     <a href="#about">About Me</a>
+     <a href="#skills">My Skills</a>
+     <a href="#contact">Contact</a>
+     <a href="#projects">Projects</a>
+     </div>
+    </nav>
+
+<!-- Home -->
+    <section id="home">
+        <h1 id="name">Hi , Myself Hritam Dutta</h1>
+        <h2>Computer Science Student</h2>
+        <p>I Love working with Data , Ai , Machine Learning 
+            and love building amazing websites as well.
+        </p>
+    </section>
+
+<!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Computer Science student having specialisation
+            in Data Science. I am currently exploring about AI and Learning
+            Deep Learning models.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Technical Skills are as follows</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Python</h3>
+                <p>Pandas,Numpy,Matplotlib, <br>Scikit-learn,Tensorflow</p>
+            </div>
+            <div class="card">
+                <h3>SQL</h3>
+                <p>Database and data analysis.</p>
+            </div>
+            <div class="card">
+                <h3>PowerBi</h3>
+                <p>Data Visualisation and Dashboards.</p>
+            </div>
+        </div>
+        <p>I have also worked on python libraries
+            like Pandas and Numpy for Data Analysis. <br>
+            Libraries like Matplotlib and Seaborn for Data Visualisation.  <br>
+            ML library Scikit Learn and for Deep Learning Tensorflow , Keras which i am 
+            learning currently.
+
+
+        </p>
+    </section>
+
+    <!-- contact -->
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" required>
+
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" required>
+
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+            <p id="form-response" aria-live="polite"></p>
+        </form>
+        <p>Let's connect on Linkedin</p>
+        <a id="link" href="https://www.linkedin.com/feed/"
+        target="_blank">Linkedin</a>
+        <p>GitHub Link as follows</p>
+        <a id="git" href="https://github.com/" target="_blank">GitHub</a>
+        <p>Email Me</p>
+        <a  id="gmail" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="gmail.png" alt="Gmail" ></a>
+    </section>
+    
+    <!-- Projects -->
+     <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <article class="project-card">
+                <span class="project-number">01</span>
+                <h3>LA Crime Dataset Analysis &amp; Dashboard</h3>
+                <p>Explored Los Angeles crime data to identify patterns by area, time and crime type, then presented the insights in an interactive dashboard.</p>
+                <div class="project-tags"><span>Python</span><span>Pandas</span><span>Power BI</span></div>
+            </article>
+            <article class="project-card">
+                <span class="project-number">02</span>
+                <h3>House Price Prediction Using ML</h3>
+                <p>Built and evaluated machine-learning models that estimate house prices from property features such as location, size and amenities.</p>
+                <div class="project-tags"><span>Python</span><span>Scikit-learn</span><span>Regression</span></div>
+            </article>
+            <article class="project-card">
+                <span class="project-number">03</span>
+                <h3>Customer Purchase Behavior Analysis</h3>
+                <p>Analyzed customer purchase data to uncover buying trends, high-value customer segments and opportunities for better business decisions.</p>
+                <div class="project-tags"><span>Python</span><span>SQL</span><span>Data Analysis</span></div>
+            </article>
+        </div>
+
+     </section>
+
+
+    <!-- Footer -->
+     <footer>
+        
+        <p>@ 2026 Hritam Dutta</p>
+        <p>Thanks</p>
+     </footer>
+
+     <script src="script.js"></script>
+</body>
+  
+</html>
