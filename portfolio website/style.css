@@ -1,0 +1,242 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background-color:black;
+    color:white;
+}
+
+nav{
+    padding: 15px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    margin: 15px;
+    border-radius: 10px;
+    
+}
+nav h2{
+    display: inline;
+    margin-right: 40px;
+}
+
+.nav-links a{
+    color:azure;
+    margin:20px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 25px;
+    
+}
+
+.nav-links a:hover{
+    color:blue;
+    height: 400px;
+    text-decoration: underline;
+}
+
+section{
+    max-width: 900px;
+    margin: 30px auto;
+    padding:30px;
+    text-align: center;
+    box-shadow: 0 3px 12px;
+    border-radius: 12px;
+}
+
+#home{
+    height:300px;
+}
+
+.name{
+    color:rgba(255, 255, 255, 0.784);
+    font-size:35px;
+    
+    
+}
+
+p{
+    font-size:18px;
+}
+
+/* Skills Cards */
+.cards{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #113877;
+    padding: 25px;
+    width:180px;
+    border-radius: 10px;
+}
+
+.card h3{
+    color:skyblue;
+}
+
+/* Projects */
+.project-cards{
+    display:flex;
+    justify-content:center;
+    gap:22px;
+    flex-wrap:wrap;
+    margin-top:35px;
+}
+
+.project-card{
+    width:280px;
+    min-height:245px;
+    box-sizing:border-box;
+    padding:30px 25px 25px;
+    text-align:left;
+    background:#113877;
+    border:1px solid rgba(135, 206, 235, 0.45);
+    border-radius:12px;
+    transition:transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0, 0, 0, 0.28);
+}
+
+.project-card h3{
+    margin:15px 0 12px;
+    color:skyblue;
+    font-size:21px;
+}
+
+
+.project-card p{
+    margin:0 0 20px;
+    font-size:16px;
+    line-height:1.55;
+}
+
+.project-number{
+    color:#b8e8ff;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.project-tags{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.project-tags span{
+    padding:5px 9px;
+    background:rgba(135, 206, 235, 0.15);
+    border-radius:20px;
+    color:#d5f3ff;
+    font-size:12px;
+}
+
+#contact a{
+    color:skyblue;
+    margin:15px;
+    text-decoration: none;
+}
+
+footer{
+    padding:20px;
+    text-align: center;
+    background-color: orange;
+}
+
+#gmail img{
+    width: 100px;
+    height:100px;
+}
+
+
+#gmail img:hover{
+    width: 120px;
+    height: 120px;
+}
+
+#link:hover{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#git:hover{
+    font-size: 20px;
+    text-decoration: underline;
+    
+}
+
+#name{
+    font-size: 6rem;
+    letter-spacing: 0.2cm;
+
+}
+
+
+#about{
+    margin-top: 100px;
+}
+
+#skills{
+    margin-top: 100px;
+}
+
+#contact{
+    margin-top: 110px;
+}
+
+
+
+.card{
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(135, 206, 235, 0.2);
+}
+
+#contact-form{
+    max-width: 500px;
+    margin: 25px auto 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+#contact-form input,
+#contact-form textarea{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #789;
+    border-radius: 6px;
+    font: inherit;
+}
+
+#contact-form button{
+    align-self: flex-start;
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 6px;
+    background: orange;
+    color: #111;
+    font: inherit;
+    cursor: pointer;
+}
+
+#contact-form button:hover{
+    background: #ffbf47;
+}
+
+#form-response{
+    color: skyblue;
+    margin: 5px 0 0;
+}
