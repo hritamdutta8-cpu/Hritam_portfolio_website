@@ -45,7 +45,8 @@ section{
 }
 
 #home{
-    height:300px;
+    min-height:300px;
+    box-sizing:border-box;
 }
 
 .name{
@@ -146,19 +147,37 @@ p{
 
 footer{
     padding:20px;
-    text-align: center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
     background-color: orange;
 }
 
+.footer-links{
+    display:flex;
+    align-items:center;
+    gap:24px;
+}
+
+.footer-links a{
+    color:#111;
+    text-decoration:none;
+}
+
+.footer-copyright{
+    margin:0;
+}
+
 #gmail img{
-    width: 100px;
-    height:100px;
+    display:block;
+    width: 32px;
+    height:32px;
 }
 
 
 #gmail img:hover{
-    width: 120px;
-    height: 120px;
+    width: 36px;
+    height: 36px;
 }
 
 #link:hover{
@@ -173,7 +192,7 @@ footer{
 }
 
 #name{
-    font-size: 6rem;
+    font-size: clamp(2.5rem, 8vw, 6rem);
     letter-spacing: 0.2cm;
 
 }
@@ -183,7 +202,15 @@ footer{
     margin-top: 100px;
 }
 
+#edu{
+    margin-top: 100px;
+}
+
 #skills{
+    margin-top: 100px;
+}
+
+#projects{
     margin-top: 100px;
 }
 
@@ -239,4 +266,46 @@ footer{
 #form-response{
     color: skyblue;
     margin: 5px 0 0;
+}
+
+@media (max-width: 600px){
+    section{
+        margin: 24px 16px;
+        padding: 24px 18px;
+    }
+
+    #home{
+        min-height: 0;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    #name{
+        font-size: clamp(2.2rem, 10vw, 3.5rem);
+        letter-spacing: 0.04em;
+        overflow-wrap: break-word;
+    }
+
+    #about{
+        margin-top: 48px;
+    }
+
+    #edu,
+    #skills,
+    #contact{
+        margin-top: 48px;
+    }
+
+    #projects{
+        margin-top: 64px;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    section p{
+        line-height: 1.5;
+    }
 }
